@@ -1,0 +1,113 @@
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.appLogo {
+  width: 42px;
+  height: 42px;
+  background-color: var(--color-success);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appLogoText {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.notificationBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #374151;
+  transition: background-color 0.2s;
+}
+
+.notificationBtn:hover {
+  background-color: #E5E7EB;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #EF4444;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.userInfo {
+  text-align: right;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.userRole {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-success);
+}
+
+.avatarContainer {
+  position: relative;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #F3F4F6;
+  border: 2px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #374151;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.statusDot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #22C55E;
+  border: 2px solid white;
+}

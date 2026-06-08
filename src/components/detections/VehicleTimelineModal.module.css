@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4F46E5;
+  font-weight: 600;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: fit-content;
+}
+
+.backBtn:hover {
+  text-decoration: underline;
+}
+
+.timelineWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 20px;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 31px;
+  width: 2px;
+  background-color: #E5E7EB;
+  z-index: 1;
+}
+
+.timelineEvent {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.dotOccupiedWrapper {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dotOccupied {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #10B3A3;
+}
+
+.dotDepartedWrapper {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dotDeparted {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #EF4444;
+}
+
+.eventCardOccupied {
+  flex: 1;
+  background-color: #F0FDF4;
+  border: 1px solid #DCFCE7;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.eventCardDeparted {
+  flex: 1;
+  background-color: #FEF2F2;
+  border: 1px solid #FEE2E2;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.eventLabel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.eventTimeOccupied {
+  font-size: 14px;
+  color: #059669;
+}
+
+.eventTimeDeparted {
+  font-size: 14px;
+  color: #DC2626;
+}

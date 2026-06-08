@@ -1,0 +1,75 @@
+.metricCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 16px;
+  border: 1px solid #D7E4F1;
+  background: #F9F8F4;
+  box-shadow: 0 0 2px inset #B8CCE0, -1px -1px 0 inset white;
+  transition: transform 0.2s;
+}
+
+.metricCard:hover {
+  transform: translateY(-2px);
+}
+
+.cardInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 112px;
+  background: #FBFDFD;
+  border-radius: 18px;
+  padding: 14px;
+  text-align: left;
+  box-shadow: -8px -8px 16px rgba(201, 217, 232, 0.18), 8px 8px 16px rgb(201, 217, 232);
+}
+
+@media (min-width: 640px) {
+  .cardInner {
+    min-height: 136px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+}
+
+.cardTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5F5B73;
+  max-width: 60%;
+  line-height: 1.2;
+}
+
+.cardIconWrapper {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .cardIconWrapper {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.cardValue {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  .cardValue {
+    font-size: 24px;
+    margin-top: 28px;
+  }
+}

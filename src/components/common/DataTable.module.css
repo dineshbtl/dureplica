@@ -1,0 +1,138 @@
+.tableContainer {
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.tableHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableActionsLeft {
+  display: flex;
+  gap: 16px;
+}
+
+.iconBtn {
+  color: #6B7280;
+  transition: color 0.2s;
+}
+
+.iconBtn:hover {
+  color: #111827;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  border-bottom: 1px solid #E5E7EB;
+  white-space: nowrap;
+}
+
+.thContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sortIcons {
+  display: flex;
+  flex-direction: column;
+  color: #9CA3AF;
+  line-height: 0.5;
+}
+
+.sortIcon {
+  height: 10px;
+}
+
+.td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #4B5563;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.tr:last-child .td {
+  border-bottom: none;
+}
+
+.tr:hover .td {
+  background-color: #F9FAFB;
+}
+
+.checkboxCell {
+  padding: 16px 20px;
+  width: 48px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #D1D5DB;
+  cursor: pointer;
+}
+
+.actionBtn {
+  color: #6B7280;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.actionBtn:hover {
+  background-color: #F3F4F6;
+  color: #111827;
+}
+
+.pagination {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.pageInfo {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.pageInfo span {
+  font-weight: 700;
+  color: #111827;
+}
+
+.select {
+  appearance: none;
+  background-color: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  padding: 6px 32px 6px 12px;
+  font-size: 14px;
+  color: #374151;
+  outline: none;
+}

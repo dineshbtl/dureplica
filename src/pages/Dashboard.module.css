@@ -1,0 +1,244 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A1F2E;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6B7585;
+  margin-top: 4px;
+}
+
+.metricsSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .metricsSection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .metricsSection {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.metricCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 16px;
+  border: 1px solid #D7E4F1;
+  background: #F9F8F4;
+  box-shadow: 0 0 2px inset #B8CCE0, -1px -1px 0 inset white;
+  transition: transform 0.2s;
+}
+
+.metricCard:hover {
+  transform: translateY(-2px);
+}
+
+.cardInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 112px;
+  background: #FBFDFD;
+  border-radius: 18px;
+  padding: 14px;
+  text-align: left;
+  box-shadow: -8px -8px 16px rgba(201, 217, 232, 0.18), 8px 8px 16px rgb(201, 217, 232);
+}
+
+@media (min-width: 640px) {
+  .cardInner {
+    min-height: 136px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+}
+
+.cardTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5F5B73;
+  max-width: 60%;
+  line-height: 1.2;
+}
+
+.cardIconWrapper {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .cardIconWrapper {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.cardValue {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  .cardValue {
+    font-size: 24px;
+    margin-top: 28px;
+  }
+}
+
+.mapSection {
+  border-radius: 24px;
+  padding: 8px;
+  border: 1px solid #D7E4F1;
+  background: #F9F8F4;
+  box-shadow: 0 0 2px inset #B8CCE0, -1px -1px 0 inset white;
+}
+
+.mapWrapper {
+  position: relative;
+  height: 66vh;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: -8px -8px 16px rgba(201, 217, 232, 0.18), 8px 8px 16px rgba(201, 217, 232, 0.55);
+}
+
+.leafletMap {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.mapSearchOverlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mapSearchBox {
+  background-color: white;
+  border-radius: 24px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-md);
+  width: 250px;
+}
+
+.mapSearchIcon {
+  color: #10B3A3;
+}
+
+.mapSearchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.mapPill {
+  background-color: rgba(95, 107, 122, 0.9);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-self: flex-start;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(4px);
+}
+
+.fullScreenBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 20;
+  background-color: #10B3A3;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  transition: opacity 0.2s;
+}
+
+.fullScreenBtn:hover {
+  opacity: 0.9;
+}
+
+.layerToggle {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 20;
+  background-color: white;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.layerBtn {
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.layerBtn:hover {
+  color: #111827;
+}
+
+.layerBtnActive {
+  background-color: #10B3A3;
+  color: white;
+}
+
+.layerBtnActive:hover {
+  color: white;
+}

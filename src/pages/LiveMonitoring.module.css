@@ -1,0 +1,280 @@
+.monitoringContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A1F2E;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6B7585;
+  margin-top: 4px;
+}
+
+.controlsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: transparent;
+}
+
+.filtersLeft, .filtersRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.selectWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  appearance: none;
+  background-color: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 8px 36px 8px 16px;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 12px;
+  color: #6B7280;
+  pointer-events: none;
+}
+
+.searchBox {
+  background-color: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  width: 200px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.searchIcon {
+  color: #9CA3AF;
+  margin-right: 8px;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #374151;
+}
+
+.statusBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+
+.badgePurple {
+  background-color: #F1EFFE;
+  color: #7C5CFC;
+}
+
+.badgeGreen {
+  background-color: #E9F9F8;
+  color: #10B3A3;
+}
+
+.badgeRed {
+  background-color: #FEE2E2;
+  color: #EF4444;
+}
+
+.strikeThrough {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 16px;
+  height: 2px;
+  background-color: #EF4444;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.fullScreenBtn {
+  border: 1px solid #112469;
+  color: #112469;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.fullScreenBtn:hover {
+  background-color: #112469;
+  color: white;
+}
+
+.cameraGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .cameraGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cameraCard {
+  background-color: #0F1219;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+}
+
+.videoPlaceholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.videoOverlaysTop {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.liveTag {
+  background-color: #EF4444;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.liveDot {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.onlineTag {
+  background-color: #10B3A3;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.expandBtn {
+  margin-left: auto;
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.videoTimestamp {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.cameraInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.cameraDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.cameraId {
+  color: #9CA3AF;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cameraName {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.zoneDetails {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.zoneLabel {
+  color: #60A5FA;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.zoneName {
+  color: #9CA3AF;
+  font-size: 12px;
+  margin-top: 2px;
+}

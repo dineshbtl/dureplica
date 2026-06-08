@@ -1,0 +1,132 @@
+.occupancyContainer {
+  padding: 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bayCard {
+  background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #06b6d4; /* cyan */
+  box-shadow: 0 0 8px #06b6d4;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.timelineSection {
+  margin-top: 8px;
+}
+
+.timelineTrack {
+  height: 12px;
+  background-color: #1e293b;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.segment {
+  height: 100%;
+}
+
+.segment.gray {
+  background-color: #475569;
+}
+
+.segment.green {
+  background-color: #10b981;
+}
+
+.segment.red {
+  background-color: #ef4444;
+}
+
+.timeMarkers {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #94a3b8;
+  font-family: monospace;
+}
+
+.marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.markerLine {
+  width: 1px;
+  height: 6px;
+  background-color: #475569;
+}
+
+.legendContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.legendItem.currentOccupied {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.legendDot.red {
+  background-color: #ef4444;
+}
+
+.legendDot.green {
+  background-color: #10b981;
+}
+
+.legendDot.gray {
+  background-color: #475569;
+}
